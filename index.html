@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Old MacDonald's Farm — Westbank, BC | A Tribute</title>
+<meta name="description" content="A tribute to Old MacDonald's Farm — the old-fashioned amusement park and petting zoo on Highway 97 in Westbank (now West Kelowna), BC. 1970s to fall 1999.">
+<style>
+  :root{
+    /* Barn-red / cream / field-green palette */
+    --red:#B03A2E; --red2:#7E2A22; --cream:#FFF6E3; --green:#3E7C43;
+    --ink:#2b2118; --muted:#7a6a58; --card:#fffdf6; --line:#e8d9b8;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--cream);color:var(--ink);
+    font-family:Georgia,'Times New Roman',serif;line-height:1.65;font-size:17px}
+  header.site{position:sticky;top:0;z-index:10;background:var(--red);color:#fff;
+    display:flex;align-items:center;gap:1rem;padding:.5rem 1.25rem}
+  header.site .brand{display:flex;align-items:center;gap:.6rem;font-size:1.05rem;
+    letter-spacing:.05em;font-weight:bold;white-space:nowrap}
+  header.site .brand small{font-weight:normal;color:#f3d9d4;font-size:.75rem}
+  nav{margin-left:auto;display:flex;gap:1rem;flex-wrap:wrap}
+  nav a{color:#fff;text-decoration:none;font-family:Verdana,Arial,sans-serif;
+    font-size:.76rem;letter-spacing:.08em;text-transform:uppercase}
+  nav a:hover{text-decoration:underline}
+  .hero{background:linear-gradient(180deg,#6e1f18 0%,var(--red) 100%);color:#fff;
+    padding:3rem 1.5rem 3.5rem;text-align:center}
+  .hero .banner{max-width:44rem;width:100%;border-radius:.5rem;border:1px solid #ffffff33;
+    margin-bottom:1.25rem}
+  .hero h1{font-size:clamp(2.2rem,6vw,3.6rem);margin:.2em 0;letter-spacing:.02em}
+  .hero h1 .farm{color:#ffe9a8}
+  .hero p.tag{font-size:1.15rem;color:#f7e8d8;max-width:42rem;margin:0 auto}
+  .hero .years{display:inline-block;margin-top:1.25rem;border:1px solid #ffffff55;
+    padding:.35rem 1.1rem;border-radius:999px;font-family:Verdana,Arial,sans-serif;
+    font-size:.8rem;letter-spacing:.18em;color:#f7e8d8}
+  main{max-width:46rem;margin:0 auto;padding:0 1.25rem 3rem}
+  section{padding:2.5rem 0;border-bottom:2px solid var(--line)}
+  section:last-of-type{border-bottom:0}
+  h2{font-size:1.7rem;margin:0 0 1rem;color:var(--red2);border-left:.35rem solid var(--green);
+    padding-left:.8rem}
+  h2 .num{color:var(--green);font-size:1rem;font-family:Verdana,Arial,sans-serif;
+    letter-spacing:.15em;display:block;margin-bottom:.4rem}
+  h3{font-size:1.2rem;margin:1.75rem 0 .5rem;color:var(--red2)}
+  p{margin:0 0 1.1rem}
+  .facts{background:var(--card);border:1px solid var(--line);border-left:.35rem solid var(--red);
+    border-radius:0 .5rem .5rem 0;padding:1.25rem 1.5rem;margin:1.5rem 0;
+    font-family:Verdana,Arial,sans-serif;font-size:.92rem}
+  .facts dt{font-weight:bold;color:var(--red2);margin-top:.55rem}
+  .facts dt:first-child{margin-top:0}
+  .facts dd{margin:0;color:var(--muted)}
+  blockquote{border-left:4px solid var(--green);margin:1.75rem 0;padding:.5rem 1.25rem;
+    font-style:italic;background:var(--card);border-radius:0 .4rem .4rem 0}
+  blockquote .src{display:block;margin-top:.5rem;font-style:normal;font-size:.85rem;color:var(--muted);
+    font-family:Verdana,Arial,sans-serif}
+  ul.attractions{list-style:none;padding:0;display:grid;gap:.6rem;margin:1.25rem 0}
+  ul.attractions li{background:var(--card);border:1px solid var(--line);border-radius:.4rem;
+    padding:.7rem 1rem;font-family:Verdana,Arial,sans-serif;font-size:.93rem}
+  ul.attractions li b{color:var(--red2)}
+  .timeline{list-style:none;padding:0;margin:1.25rem 0}
+  .timeline li{display:grid;grid-template-columns:7.5rem 1fr;gap:1rem;padding:.7rem 0;
+    border-bottom:1px dashed var(--line);font-family:Verdana,Arial,sans-serif;font-size:.92rem}
+  .timeline li:last-child{border-bottom:0}
+  .timeline .yr{font-weight:bold;color:var(--green);white-space:nowrap}
+  .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(13rem,1fr));gap:.9rem;margin:1.25rem 0}
+  .gallery figure{margin:0;background:var(--card);border:1px solid var(--line);
+    border-radius:.4rem;overflow:hidden}
+  .gallery img{width:100%;display:block;aspect-ratio:4/3;object-fit:cover;background:#f2ecd9}
+  .gallery figcaption{padding:.6rem .8rem;font-family:Verdana,Arial,sans-serif;
+    font-size:.78rem;color:var(--muted)}
+  .gallery figcaption .credit{display:block;margin-top:.3rem;font-style:italic}
+  .sources{font-family:Verdana,Arial,sans-serif;font-size:.85rem;color:var(--muted)}
+  .sources li{margin-bottom:.45rem}
+  form.contact{background:var(--red2);color:#f3e2dc;border-radius:.6rem;
+    padding:2rem 1.75rem;margin-top:1.5rem;font-family:Verdana,Arial,sans-serif}
+  form.contact h3{color:#fff;margin-top:0}
+  form.contact label{display:block;font-size:.82rem;letter-spacing:.06em;
+    text-transform:uppercase;margin:1rem 0 .3rem;color:#f3d9d4}
+  form.contact input,form.contact textarea{width:100%;padding:.65rem .8rem;border:0;
+    border-radius:.35rem;font-size:1rem;font-family:Verdana,Arial,sans-serif}
+  form.contact textarea{min-height:8rem;resize:vertical}
+  form.contact button{margin-top:1.25rem;background:var(--green);color:#fff;border:0;
+    padding:.8rem 2rem;border-radius:.35rem;font-size:1rem;letter-spacing:.06em;cursor:pointer}
+  form.contact button:hover{background:#2f6534}
+  form.contact .note{font-size:.78rem;color:#e8c9c2;margin-top:1rem}
+  footer{background:var(--red2);color:#f3d9d4;text-align:center;padding:1.75rem 1rem;
+    font-family:Verdana,Arial,sans-serif;font-size:.8rem}
+  footer .stripe{display:block;height:.35rem;background:var(--green);margin:-1.75rem -1rem 1.5rem}
+  footer .visitor-counter{margin-top:1.25rem}
+  footer .visitor-label{font-size:.72rem;letter-spacing:.25em;text-transform:uppercase;
+    color:#e8c9c2;margin:0 0 .4rem}
+  @media (max-width:560px){.timeline li{grid-template-columns:1fr;gap:.15rem}}
+  @media (max-width:760px){
+    header.site{flex-direction:column;align-items:flex-start;gap:.5rem;padding:.7rem 1rem}
+    nav{margin-left:0;gap:.55rem 1.1rem}
+    nav a{font-size:.72rem}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="brand">🚜 Old MacDonald's Farm <small>· Westbank, BC</small></div>
+  <nav>
+    <a href="#farm">The Farm</a>
+    <a href="#attractions">Attractions</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#souvenirs">Souvenirs</a>
+    <a href="#remembered">Remembered</a>
+    <a href="#sources">Sources</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <img class="banner" src="img/stacey-grist-main-barn.jpg" alt="The main white barn building with red Old Mac Donald's Farm lettering">
+  <div class="years">WESTBANK, BC &nbsp;·&nbsp; 1970s – FALL 1999</div>
+  <h1><span class="farm">Old MacDonald's</span><br>Farm</h1>
+  <p class="tag">The old-fashioned amusement park and petting zoo on Highway 97 —
+  pony rides, the beetle train, trout fished from the bridge, and Omar the camel.</p>
+</div>
+
+<main>
+
+<section id="farm">
+  <h2><span class="num">01</span>The Farm</h2>
+  <p>For the better part of three decades, Old MacDonald's Farm was one of the
+  Okanagan's best-loved roadside stops — an old-fashioned family amusement park
+  and petting zoo right on Highway 97 in Westbank (today West Kelowna). Generations
+  of local kids and vacationing families came for the farm animals, the little
+  train, the fishing pond, and the waterslides next door.</p>
+  <p>It stood at <b>3020 Louie Drive</b>, on the land where the Real Canadian
+  Superstore sits today. Travel writers of the era described it as the perfect
+  outing for young kids — farm animals to visit, a miniature train, tractors to
+  climb on, dollar pony rides, and free strollers for the littlest visitors. It
+  was also a regular school field-trip destination.</p>
+  <p>In the fall of <b>1999</b>, after an illness swept through the animal pens,
+  the farm closed its gates for the last time. A few years later the land was
+  redeveloped into the shopping centre that stands there now — but the memories
+  never left the valley.</p>
+  <dl class="facts">
+    <dt>Address</dt><dd>3020 Louie Drive, Westbank, BC — now West Kelowna (the Real Canadian Superstore site)</dd>
+    <dt>Phone</dt><dd>(250) 768-5167 in later years; an earlier entrance sign shows 768-3482</dd>
+    <dt>Years</dt><dd>1970s to fall 1999</dd>
+    <dt>The site today</dt><dd>Real Canadian Superstore and the Westbank Towne Centre shopping area</dd>
+  </dl>
+</section>
+
+<section id="attractions">
+  <h2><span class="num">02</span>Attractions</h2>
+  <p>Ask anyone who grew up in the Central Okanagan in the 70s, 80s or 90s and
+  they'll rattle off the highlights like it was yesterday:</p>
+  <ul class="attractions">
+    <li><b>Petting zoo &amp; baby animals</b> — farm animals and bottle-fed babies you could hold</li>
+    <li><b>Omar the camel</b> — the farm's most famous resident</li>
+    <li><b>Pony rides</b> — around the paddock, plus pony-drawn carts</li>
+    <li><b>Hayrides &amp; wagon rides</b> — horse-drawn rides around the grounds</li>
+    <li><b>The beetle train</b> — the children's ladybug/caterpillar train, plus a little red commuter train</li>
+    <li><b>Fishing pond</b> — catch rainbow trout from the bridge (certificates for your first fish!)</li>
+    <li><b>Whale waterslide &amp; small water park</b> — splashing right beside the farm</li>
+    <li><b>Upstairs art gallery</b> — Indigenous art and crafts above the barn</li>
+    <li><b>The big roadside sign</b> — the cartoon EIEIO sign that waved travellers in off Highway 97</li>
+  </ul>
+</section>
+
+<section id="timeline">
+  <h2><span class="num">03</span>Timeline</h2>
+  <ul class="timeline">
+    <li><span class="yr">1970s</span><span>The farm opens its gates on Highway 97 in Westbank and becomes a fixture of Okanagan family summers.</span></li>
+    <li><span class="yr">1977</span><span>A Beautiful BC Magazine aerial captures the farm — and the drive-in next door — from above.</span></li>
+    <li><span class="yr">1970s–80s</span><span>The Martens family lives right on the farm; their dad keeps the place running as maintenance man.</span></li>
+    <li><span class="yr">June 16, 1989</span><span>A young visitor earns a "First Fish" certificate for a rainbow trout caught at the pond.</span></li>
+    <li><span class="yr">June 1991</span><span>Children pile into the farm's little red commuter train — a moment preserved by the Westbank Museum and Archives.</span></li>
+    <li><span class="yr">Fall 1999</span><span>After an illness spreads through the animal pens, Old MacDonald's Farm closes for good.</span></li>
+    <li><span class="yr">Dec 2004</span><span>Anthem Properties advances plans for a 350,000-sq-ft shopping centre on the old farm site, anchored by Canadian Tire and the Real Canadian Superstore.</span></li>
+    <li><span class="yr">Today</span><span>The Superstore at 3020 Louie Drive stands where the barn, the pond and the beetle train used to be.</span></li>
+  </ul>
+</section>
+
+<section id="gallery">
+  <h2><span class="num">04</span>Gallery</h2>
+  <p>Photos shared by the people who were there — staff, families who lived on
+  the farm, and visitors who kept their snapshots for decades.</p>
+  <div class="gallery">
+    <figure>
+      <img src="img/stacey-grist-main-barn.jpg" alt="The main white barn building with red Old Mac Donald's Farm lettering" loading="lazy">
+      <figcaption>The main barn, white with red trim and the farm's name in big red letters<span class="credit">Photo: Stacey Grist, via Old Kelowna</span></figcaption>
+    </figure>
+    <figure>
+      <img src="img/rick-soehn-staff-1970s.jpg" alt="1970s farm staff in overalls in front of the barn" loading="lazy">
+      <figcaption>Farm staff in overalls and checkered shirts, 1970s<span class="credit">Photo: Rick Soehn, via Old Kelowna</span></figcaption>
+    </figure>
+    <figure>
+      <img src="img/westknews-staff-1970s.jpg" alt="1970s staff in front of the food barn" loading="lazy">
+      <figcaption>Staff in front of the food barn with its painted pig and goat signs<span class="credit">Photo: Rick Soehn / Old Kelowna, via West K News</span></figcaption>
+    </figure>
+    <figure>
+      <img src="img/abe-martens-entrance-sign-hwy97.jpg" alt="Barn-style entrance sign along Highway 97" loading="lazy">
+      <figcaption>The barn-style entrance sign along Highway 97<span class="credit">Photo: Abe Martens, via Old Kelowna</span></figcaption>
+    </figure>
+    <figure>
+      <img src="img/abe-martens-roadside-sign.jpg" alt="Roadside entrance sign" loading="lazy">
+      <figcaption>The roadside entrance sign<span class="credit">Photo: Abe Martens, via Old Kelowna</span></figcaption>
+    </figure>
+    <figure>
+      <img src="img/westknews-roadside-sign.jpg" alt="Roadside sign with Westbank direction arrows" loading="lazy">
+      <figcaption>The roadside sign with its Westbank arrows — and gas<span class="credit">Photo: Old Kelowna/Facebook, via West K News</span></figcaption>
+    </figure>
+    <figure>
+      <img src="img/entrance-sign-old-kelowna.jpg" alt="Entrance sign photo" loading="lazy">
+      <figcaption>The entrance sign, as remembered<span class="credit">Photo: Old Kelowna</span></figcaption>
+    </figure>
+    <figure>
+      <img src="img/abe-martens-caterpillar-train.jpg" alt="The caterpillar train with a chicken nearby" loading="lazy">
+      <figcaption>The caterpillar train — with a chicken along for the ride<span class="credit">Photo: Abe Martens, via Old Kelowna</span></figcaption>
+    </figure>
+    <figure>
+      <img src="img/westknews-train-june1991.jpg" alt="Children riding the farm's commuter train, June 1991" loading="lazy">
+      <figcaption>Children on the farm's commuter train, June 1991<span class="credit">Photo: Westbank Museum and Archives, via West K News</span></figcaption>
+    </figure>
+    <figure>
+      <img src="img/abe-martens-pony-rides-waterslide.jpg" alt="Pony rides enclosure with the Whale waterslide behind" loading="lazy">
+      <figcaption>The pony-rides fence — with the Whale waterslide looming behind<span class="credit">Photo: Abe Martens, via Old Kelowna</span></figcaption>
+    </figure>
+    <figure>
+      <img src="img/janice-shepherd-pony-cart.jpg" alt="Janice Shepherd with a pony-drawn cart" loading="lazy">
+      <figcaption>Janice with the pony cart — she worked here summers in high school in the 70s<span class="credit">Photo: Janice Shepherd, via Old Kelowna</span></figcaption>
+    </figure>
+    <figure>
+      <img src="img/abe-martens-fishing-pond.jpg" alt="The fishing pond with fountain" loading="lazy">
+      <figcaption>The fishing pond and its fountain<span class="credit">Photo: Abe Martens, via Old Kelowna</span></figcaption>
+    </figure>
+    <figure>
+      <img src="img/scott-yelland-first-fish-1989.jpg" alt="1989 First Fish certificate for a rainbow trout" loading="lazy">
+      <figcaption>A 1989 "First Fish" certificate — rainbow trout, June 16, 1989<span class="credit">Photo: Scott Yelland, via Old Kelowna</span></figcaption>
+    </figure>
+    <figure>
+      <img src="img/abe-martens-peacock.jpg" alt="Peacock enclosure with the barn" loading="lazy">
+      <figcaption>A peacock by the barn<span class="credit">Photo: Abe Martens, via Old Kelowna</span></figcaption>
+    </figure>
+    <figure>
+      <img src="img/abe-martens-pedal-tractors.jpg" alt="Pedal tractors and trikes" loading="lazy">
+      <figcaption>The pedal tractors — where a generation learned to skid<span class="credit">Photo: Abe Martens, via Old Kelowna</span></figcaption>
+    </figure>
+    <figure>
+      <img src="img/westknews-woman-horse.jpg" alt="Woman in a wide-brimmed hat with a horse" loading="lazy">
+      <figcaption>A visitor with one of the farm's horses<span class="credit">Photo: Old Kelowna/Facebook, via West K News</span></figcaption>
+    </figure>
+    <figure>
+      <img src="img/westknews-main-building.jpg" alt="Main building with Old Mac Donald's Farm signage, older photo" loading="lazy">
+      <figcaption>The main building in an earlier era<span class="credit">Photo: West K News</span></figcaption>
+    </figure>
+    <figure>
+      <img src="img/westknews-barn-color.jpg" alt="White and red main barn with farm signage" loading="lazy">
+      <figcaption>The white-and-red barn in colour<span class="credit">Photo: West K News</span></figcaption>
+    </figure>
+    <figure>
+      <img src="img/jonathan-nebot-eieio-sign.jpg" alt="The surviving EIEIO sign mounted on a backyard fence" loading="lazy">
+      <figcaption>The old EIEIO sign, rescued and mounted on a backyard fence<span class="credit">Photo: Jonathan Nebot, via Old Kelowna</span></figcaption>
+    </figure>
+    <figure>
+      <img src="img/aerial-1977-beautiful-bc.jpg" alt="1977 aerial of Westbank showing the drive-in and the farm" loading="lazy">
+      <figcaption>Westbank from the air, 1977 — the drive-in and the farm below<span class="credit">Photo: Old Kelowna / Beautiful BC Magazine</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="souvenirs">
+  <h2><span class="num">05</span>Postcards &amp; Souvenirs</h2>
+  <p>The farm put out postcards, pennants and little souvenirs by the boxful —
+  and they still turn up in collections and auctions today.</p>
+  <div class="gallery">
+    <figure>
+      <img src="img/postcard-scarecrow-train-delcampe.jpg" alt="Vintage postcard with the scarecrow sign and ladybug train" loading="lazy">
+      <figcaption>Vintage postcard — the scarecrow sign and the ladybug train<span class="credit">Photo: Old Kelowna via delcampe.net</span></figcaption>
+    </figure>
+    <figure>
+      <img src="img/postcard-collage-delcampe.jpg" alt="Postcard collage with buggy ride, pond, piglets, goat and farm logo" loading="lazy">
+      <figcaption>Postcard collage — buggy ride, pond, piglets, goat, and the farm logo<span class="credit">Photo: Old Kelowna via delcampe.net</span></figcaption>
+    </figure>
+    <figure>
+      <img src="img/postcard-scarecrow-delcampe.jpg" alt="Scarecrow and train postcard" loading="lazy">
+      <figcaption>Scarecrow-and-train postcard<span class="credit">Photo: Old Kelowna via delcampe.net</span></figcaption>
+    </figure>
+    <figure>
+      <img src="img/ebay-postcard-pig-goat-fish.jpg" alt="Vintage postcard showing a pig, a goat and fish" loading="lazy">
+      <figcaption>Vintage postcard — pig, goat and fish<span class="credit">Photo: eBay listing</span></figcaption>
+    </figure>
+    <figure>
+      <img src="img/ebay-postcard-multiview.jpg" alt="Multiview postcard of the farm" loading="lazy">
+      <figcaption>Multiview postcard<span class="credit">Photo: eBay listing</span></figcaption>
+    </figure>
+    <figure>
+      <img src="img/ebay-postcard-vintage.jpg" alt="Vintage photochrome postcard, Okanagan Valley" loading="lazy">
+      <figcaption>Vintage photochrome postcard<span class="credit">Photo: eBay listing</span></figcaption>
+    </figure>
+    <figure>
+      <img src="img/ebay-postcard-alex-wilson.jpg" alt="Vintage postcard from the Alex Wilson publisher" loading="lazy">
+      <figcaption>Vintage postcard<span class="credit">Photo: eBay listing</span></figcaption>
+    </figure>
+    <figure>
+      <img src="img/ebay-felt-pennant.jpg" alt="Vintage felt pennant" loading="lazy">
+      <figcaption>Vintage felt pennant<span class="credit">Photo: eBay listing</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="remembered">
+  <h2><span class="num">06</span>Remembered</h2>
+  <blockquote>
+    Learning to skid on the pedal tractors at seven years old — the farm was
+    the best part of every summer.
+    <span class="src">— Bettina Martens, remembering the farm on Old Kelowna</span>
+  </blockquote>
+  <blockquote>
+    Worked there during my high-school summers in the 70s — the ponies, the
+    kids, the whole place.
+    <span class="src">— Janice Shepherd, former summer employee, via Old Kelowna</span>
+  </blockquote>
+  <p>If you visited, worked there, or have photos tucked in a drawer somewhere,
+  this site would love to hear from you — see below.</p>
+</section>
+
+<section id="sources">
+  <h2><span class="num">07</span>Sources</h2>
+  <ul class="sources">
+    <li>Firsthand account of the farm's years, attractions, closure and Omar the camel — pre-internet memory of the era</li>
+    <li>The Travel Files — Kate Pocock's Okanagan write-up: farm animals, miniature train, tractors to sit on, dollar pony rides, free strollers; phone (250) 768-5167</li>
+    <li>BC School Destinations — Thompson-Okanagan listings: "Old MacDonald's Farm | Westbank | (250) 768-5167"</li>
+    <li>West K News — "History in photos: Old Mac Donald's Farm" (Feb 10, 2021); "A look back at historic West Kelowna: Old MacDonald's Farm" (2025); the "Historic Westbank" photo series (2026)</li>
+    <li>Castanet — John Thomson, "Old MacDonalds Being Developed" (Dec 9, 2004): Anthem Properties' 350,000-sq-ft redevelopment plan</li>
+    <li>Old Kelowna (Facebook community history page) — 17 photos and commenter memories, including the Martens family archive</li>
+    <li>eBay listings — vintage postcards, felt pennants, souvenir spoon and sticker patch from the farm (listing photos only; nothing purchased)</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2><span class="num">08</span>Say Hello</h2>
+  <p>Visited the farm, worked there, or have photos and stories to share? Drop a
+  line below — messages come straight to the site's keeper.</p>
+
+  <!--
+    CONTACT FORM: wired to Dave's reusable Formspree endpoint
+    (https://formspree.io/f/mdeaojky), same as his other tribute sites.
+    Fields: name, _replyto, message, _subject.
+  -->
+  <form class="contact" action="https://formspree.io/f/mdeaojky" method="POST">
+    <h3>Contact</h3>
+    <input type="hidden" name="_subject" value="New message from the Old MacDonald's Farm tribute site">
+    <label for="c-name">Your name</label>
+    <input id="c-name" name="name" type="text" required autocomplete="name">
+    <label for="c-email">Your email</label>
+    <input id="c-email" name="_replyto" type="email" required autocomplete="email">
+    <label for="c-msg">Message</label>
+    <textarea id="c-msg" name="message" required></textarea>
+    <button type="submit">Send message</button>
+    <p class="note">Your email stays private — it's only used so a reply is possible.</p>
+  </form>
+</section>
+
+</main>
+
+<footer>
+  <span class="stripe"></span>
+  A fan-made tribute to Old MacDonald's Farm, Westbank (now West Kelowna), BC — 1970s to fall 1999.<br>
+  Built with memories, snapshots and shoebox postcards.
+  <div class="visitor-counter">
+    <p class="visitor-label">Visitors</p>
+    <!-- hitwebcounter Code START -->
+    <a href="https://www.hitwebcounter.com/" target="_blank" rel="noopener"><img src="https://www.hitwebcounter.com/counter/counter.php?page=21523987&style=0028&nbdigits=5&type=page" alt="Visitor counter" decoding="async" style="border:0;max-width:100%;height:auto;" /></a>
+    <!-- hitwebcounter Code END -->
+  </div>
+</footer>
+
+</body>
+</html>
