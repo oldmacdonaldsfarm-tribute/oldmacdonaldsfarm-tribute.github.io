@@ -26,9 +26,10 @@
   nav a:hover{text-decoration:underline}
   .hero{background:linear-gradient(180deg,#E63946 0%,#D7263D 100%);color:#fff;
     padding:3rem 1.5rem 3.5rem;text-align:center;border-bottom:.5rem solid var(--yellow)}
-  .hero .banner{max-width:44rem;width:100%;border-radius:.5rem;border:6px solid #fff;
+  /* Header photo shown whole, at its natural 802x384 proportions — never stretched, same treatment as Kitsault / Northern Lite / Rattlesnake Island. */
+  .hero .banner{width:min(802px,100%);height:auto;display:block;border-radius:.5rem;border:6px solid #fff;
     box-shadow:0 12px 32px rgba(0,0,0,.25);
-    margin-bottom:1.25rem}
+    margin:1.5rem auto 0}
   .hero h1{font-size:clamp(2.2rem,6vw,3.6rem);margin:.2em 0;letter-spacing:.02em}
   .hero h1 .farm{color:var(--yellow)}
   .hero p.tag{font-size:1.15rem;color:#fff;max-width:42rem;margin:0 auto}
@@ -115,11 +116,11 @@
 </header>
 
 <div class="hero">
-  <img class="banner" src="img/stacey-grist-main-barn.jpg" alt="The main white barn building with red Old Mac Donald's Farm lettering">
   <div class="years">WESTBANK, BC &nbsp;·&nbsp; 1970s – FALL 1999</div>
   <h1><span class="farm">Old MacDonald's</span><br>Farm</h1>
   <p class="tag">The old-fashioned amusement park and petting zoo on Highway 97 —
   pony rides, the beetle train, trout fished from the bridge, and Omar the camel.</p>
+  <img class="banner" src="img/stacey-grist-main-barn.jpg" alt="The main white barn building with red Old Mac Donald's Farm lettering" width="802" height="384">
 </div>
 
 <main>
@@ -187,6 +188,10 @@
   <p>Photos shared by the people who were there — staff, families who lived on
   the farm, and visitors who kept their snapshots for decades.</p>
   <div class="gallery">
+    <figure>
+      <img src="img/rick-soehn-staff-1970s.jpg" alt="1970s farm staff in overalls in front of the barn" loading="lazy">
+      <figcaption>Farm staff in overalls and checkered shirts, 1970s<span class="credit">Photo: Rick Soehn, via Old Kelowna</span></figcaption>
+    </figure>
     <figure>
       <img src="img/westknews-staff-1970s.jpg" alt="1970s staff in front of the food barn" loading="lazy">
       <figcaption>Staff in front of the food barn with its painted pig and goat signs<span class="credit">Photo: Rick Soehn / Old Kelowna, via West K News</span></figcaption>
