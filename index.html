@@ -7,9 +7,10 @@
 <meta name="description" content="A tribute to Old MacDonald's Farm — the old-fashioned amusement park and petting zoo on Highway 97 in Westbank (now West Kelowna), BC. 1970s to fall 1999.">
 <style>
   :root{
-    /* Barn-red / cream / field-green palette */
-    --red:#B03A2E; --red2:#7E2A22; --cream:#FFF6E3; --green:#3E7C43;
-    --ink:#2b2118; --muted:#7a6a58; --card:#fffdf6; --line:#e8d9b8;
+    /* 5 · Barn Red & White — bright, upbeat, the farm's own white-and-red colours (Dave's pick, 2026-11-11) */
+    --red:#E63946; --red2:#C1272D; --cream:#FFFFFF; --green:#43A047;
+    --yellow:#FFC400; --sky:#2FA8E0;
+    --ink:#222222; --muted:#5f6b7a; --card:#ffffff; --line:#f0d9d9;
   }
   *{box-sizing:border-box}
   body{margin:0;background:var(--cream);color:var(--ink);
@@ -23,20 +24,21 @@
   nav a{color:#fff;text-decoration:none;font-family:Verdana,Arial,sans-serif;
     font-size:.76rem;letter-spacing:.08em;text-transform:uppercase}
   nav a:hover{text-decoration:underline}
-  .hero{background:linear-gradient(180deg,#6e1f18 0%,var(--red) 100%);color:#fff;
-    padding:3rem 1.5rem 3.5rem;text-align:center}
-  .hero .banner{max-width:44rem;width:100%;border-radius:.5rem;border:1px solid #ffffff33;
+  .hero{background:linear-gradient(180deg,#E63946 0%,#D7263D 100%);color:#fff;
+    padding:3rem 1.5rem 3.5rem;text-align:center;border-bottom:.5rem solid var(--yellow)}
+  .hero .banner{max-width:44rem;width:100%;border-radius:.5rem;border:6px solid #fff;
+    box-shadow:0 12px 32px rgba(0,0,0,.25);
     margin-bottom:1.25rem}
   .hero h1{font-size:clamp(2.2rem,6vw,3.6rem);margin:.2em 0;letter-spacing:.02em}
-  .hero h1 .farm{color:#ffe9a8}
-  .hero p.tag{font-size:1.15rem;color:#f7e8d8;max-width:42rem;margin:0 auto}
+  .hero h1 .farm{color:var(--yellow)}
+  .hero p.tag{font-size:1.15rem;color:#fff;max-width:42rem;margin:0 auto}
   .hero .years{display:inline-block;margin-top:1.25rem;border:1px solid #ffffff55;
     padding:.35rem 1.1rem;border-radius:999px;font-family:Verdana,Arial,sans-serif;
-    font-size:.8rem;letter-spacing:.18em;color:#f7e8d8}
+    font-size:.8rem;letter-spacing:.18em;color:#fff}
   main{max-width:46rem;margin:0 auto;padding:0 1.25rem 3rem}
   section{padding:2.5rem 0;border-bottom:2px solid var(--line)}
   section:last-of-type{border-bottom:0}
-  h2{font-size:1.7rem;margin:0 0 1rem;color:var(--red2);border-left:.35rem solid var(--green);
+  h2{font-size:1.7rem;margin:0 0 1rem;color:var(--red2);border-left:.35rem solid var(--yellow);
     padding-left:.8rem}
   h2 .num{color:var(--green);font-size:1rem;font-family:Verdana,Arial,sans-serif;
     letter-spacing:.15em;display:block;margin-bottom:.4rem}
@@ -64,7 +66,7 @@
   .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(13rem,1fr));gap:.9rem;margin:1.25rem 0}
   .gallery figure{margin:0;background:var(--card);border:1px solid var(--line);
     border-radius:.4rem;overflow:hidden}
-  .gallery img{width:100%;display:block;aspect-ratio:4/3;object-fit:cover;background:#f2ecd9}
+  .gallery img{width:100%;display:block;aspect-ratio:4/3;object-fit:cover;background:#FFF3E0}
   .gallery figcaption{padding:.6rem .8rem;font-family:Verdana,Arial,sans-serif;
     font-size:.78rem;color:var(--muted)}
   .gallery figcaption .credit{display:block;margin-top:.3rem;font-style:italic}
@@ -80,11 +82,11 @@
   form.contact textarea{min-height:8rem;resize:vertical}
   form.contact button{margin-top:1.25rem;background:var(--green);color:#fff;border:0;
     padding:.8rem 2rem;border-radius:.35rem;font-size:1rem;letter-spacing:.06em;cursor:pointer}
-  form.contact button:hover{background:#2f6534}
+  form.contact button:hover{background:#2E7D32}
   form.contact .note{font-size:.78rem;color:#e8c9c2;margin-top:1rem}
   footer{background:var(--red2);color:#f3d9d4;text-align:center;padding:1.75rem 1rem;
     font-family:Verdana,Arial,sans-serif;font-size:.8rem}
-  footer .stripe{display:block;height:.35rem;background:var(--green);margin:-1.75rem -1rem 1.5rem}
+  footer .stripe{display:block;height:.5rem;background:linear-gradient(90deg,var(--red) 0 25%,var(--yellow) 25% 50%,var(--green) 50% 75%,var(--sky) 75% 100%);margin:-1.75rem -1rem 1.5rem}
   footer .visitor-counter{margin-top:1.25rem}
   footer .visitor-label{font-size:.72rem;letter-spacing:.25em;text-transform:uppercase;
     color:#e8c9c2;margin:0 0 .4rem}
